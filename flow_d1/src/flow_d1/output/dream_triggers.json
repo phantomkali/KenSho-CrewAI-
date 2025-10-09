@@ -1,0 +1,106 @@
+{
+  "triggers": {
+    "Feelings": [
+      {
+        "trigger": "fear",
+        "evidence": [
+          "I was running through a ruined city at night",
+          "I saw soldiers with rifles moving past me"
+        ],
+        "dsm5_mapping": [
+          "Criterion A",
+          "Criterion B"
+        ],
+        "rationale": "The feelings of fear manifest through running in a dangerous environment (ruined city at night) and encountering soldiers, suggesting perceived threats.",
+        "recommended_action": "Assess exposure history to violence or wartime experiences."
+      },
+      {
+        "trigger": "helplessness",
+        "evidence": [
+          "I tried to move toward the voice, but the floor collapsed under me, and I was trapped in the rubble"
+        ],
+        "dsm5_mapping": [
+          "Criterion D"
+        ],
+        "rationale": "The sensation of helplessness due to being trapped reflects a negative emotional state and inability to control the situation.",
+        "recommended_action": "Explore feelings of helplessness in past trauma situations."
+      },
+      {
+        "trigger": "chest heaviness",
+        "evidence": [
+          "My chest felt heavy, and I couldn't breathe"
+        ],
+        "dsm5_mapping": [
+          "Criterion E"
+        ],
+        "rationale": "The physical sensation of chest heaviness correlates with anxiety and arousal symptoms often associated with trauma.",
+        "recommended_action": "Conduct a physical health assessment and explore anxiety triggers."
+      }
+    ],
+    "Sounds": [
+      {
+        "trigger": "explosions",
+        "evidence": [
+          "the sound of explosions echoed in the distance"
+        ],
+        "dsm5_mapping": [
+          "Criterion A",
+          "Criterion B"
+        ],
+        "rationale": "Hearing explosions in the dream may symbolize intrusive reminders of past traumatic events, creating distress.",
+        "recommended_action": "Evaluate triggers related to loud noises or traumatic past experiences."
+      },
+      {
+        "trigger": "people crying",
+        "evidence": [
+          "I could hear people crying and someone calling for help"
+        ],
+        "dsm5_mapping": [
+          "Criterion D"
+        ],
+        "rationale": "Hearing cries for help evokes feelings of distress and helplessness, contributing to the emotional impact of the dream.",
+        "recommended_action": "Discuss feelings around witnessing suffering in dreams or reality."
+      },
+      {
+        "trigger": "soldiers' boots",
+        "evidence": [
+          "I saw soldiers with rifles moving past me, their boots pounding on the ground"
+        ],
+        "dsm5_mapping": [
+          "Criterion A"
+        ],
+        "rationale": "The sound of soldiers signifies a threat environment that could exacerbate feelings of fear and anxiety.",
+        "recommended_action": "Investigate experiences related to military environments or exposure."
+      }
+    ],
+    "Places": [
+      {
+        "trigger": "ruined city",
+        "evidence": [
+          "I was running through a ruined city at night"
+        ],
+        "dsm5_mapping": [
+          "Criterion A"
+        ],
+        "rationale": "The environment of a ruined city suggests a setting associated with destruction and potential danger, symbolizing trauma experiences.",
+        "recommended_action": "Explore any historical associations or memories linked to ruins or destruction."
+      },
+      {
+        "trigger": "broken building",
+        "evidence": [
+          "ducking into a broken building"
+        ],
+        "dsm5_mapping": [
+          "Criterion C"
+        ],
+        "rationale": "Seeking shelter in a broken building reflects avoidance behavior and the search for safety from chaos.",
+        "recommended_action": "Evaluate feelings about safety and anxiety in insecure environments."
+      }
+    ]
+  },
+  "summary": "The dream captures distressing emotions tied to perceived threats and feelings of helplessness within a traumatic landscape filled with violent sounds.",
+  "assessment": {
+    "likely_ptsd_trigger": true,
+    "rationale": "The dream vividly depicts elements consistent with PTSD triggers including fear, helplessness, intrusive sounds, and threats reinforced by environmental cues."
+  }
+}

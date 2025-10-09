@@ -1,0 +1,98 @@
+{
+  "triggers": {
+    "People": [
+      {
+        "trigger": "People crying and calling for help",
+        "evidence": [
+          "hearing people crying",
+          "someone calling for help"
+        ],
+        "dsm5_mapping": [
+          "Criterion A: stressor",
+          "Criterion B: intrusion"
+        ],
+        "rationale": "The individual experiences distressing sounds that evoke feelings of helplessness, potentially linking to a traumatic event or fear of death/injury.",
+        "recommended_action": "Explore past experiences related to feelings of helplessness or fear of loss."
+      }
+    ],
+    "Feelings": [
+      {
+        "trigger": "Feelings of fear and helplessness",
+        "evidence": [
+          "fear",
+          "helplessness",
+          "chest heaviness",
+          "suffocation"
+        ],
+        "dsm5_mapping": [
+          "Criterion B: intrusion",
+          "Criterion D: negative mood"
+        ],
+        "rationale": "The sensations of fear and helplessness during the dream reflect significant emotional distress, suggesting potential unresolved trauma.",
+        "recommended_action": "Consider discussing feelings of fear and helplessness in therapy to understand their origins."
+      }
+    ],
+    "Things": [
+      {
+        "trigger": "Explosions and collapsed floor",
+        "evidence": [
+          "sound of explosions echoed",
+          "the floor collapsed under me"
+        ],
+        "dsm5_mapping": [
+          "Criterion A: stressor",
+          "Criterion E: arousal"
+        ],
+        "rationale": "Exposure to violent sounds and imagery, such as explosions and collapsing buildings, indicate possible trauma-related re-experiencing.",
+        "recommended_action": "Review any past experiences related to explosions or destruction that could be impacting emotional responses."
+      }
+    ],
+    "Places": [
+      {
+        "trigger": "Ruined city at night",
+        "evidence": [
+          "running through a ruined city at night"
+        ],
+        "dsm5_mapping": [
+          "Criterion A: stressor"
+        ],
+        "rationale": "The imagery of a ruined city adds a context of destruction and danger, potentially linking to traumatic experiences.",
+        "recommended_action": "Explore feelings about places associated with past traumas or feelings of safety."
+      }
+    ],
+    "Sounds": [
+      {
+        "trigger": "Sound of soldiers' boots",
+        "evidence": [
+          "soldiers with rifles moving past me",
+          "their boots pounding on the ground"
+        ],
+        "dsm5_mapping": [
+          "Criterion B: intrusion",
+          "Criterion E: arousal"
+        ],
+        "rationale": "Auditory memories of soldiers signify a sense of threat and fear, linking to potential past trauma regarding safety.",
+        "recommended_action": "Consider discussing sensory triggers in therapy to identify possible trauma connections."
+      }
+    ],
+    "Situations": [
+      {
+        "trigger": "Being trapped in rubble",
+        "evidence": [
+          "I was trapped in the rubble"
+        ],
+        "dsm5_mapping": [
+          "Criterion A: stressor",
+          "Criterion E: arousal"
+        ],
+        "rationale": "The experience of being trapped relates to feelings of loss of control and heightened anxiety, reflecting possible trauma responses.",
+        "recommended_action": "Explore feelings surrounding claustrophobia or helplessness related to being trapped."
+      }
+    ]
+  },
+  "summary": "The dream exhibits multiple potential PTSD triggers, including feelings of fear and helplessness connected to memories of distressing scenarios involving explosions, people in need, and feelings of being trapped. These elements may relate to past traumatic experiences requiring further exploration.",
+  "assessment": {
+    "likely_ptsd_trigger": true,
+    "rationale": "The presence of significant distressing themes and sensations in the dream aligns with characteristics of PTSD, suggesting the need for further assessment."
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "semantic_representation": {
+    "event_type": "exposure to armed conflict",
+    "context": "ruined city, explosions at night",
+    "symptoms": [
+      "fear",
+      "hyperarousal",
+      "helplessness",
+      "suffocation",
+      "sleep disturbance"
+    ],
+    "specific_events": [
+      "running through a ruined city",
+      "hearing explosions",
+      "ducking into a broken building",
+      "hearing people calling for help",
+      "falling into rubble",
+      "trapped and unable to breathe",
+      "seeing soldiers with rifles"
+    ]
+  }
+}

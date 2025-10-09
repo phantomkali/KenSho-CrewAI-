@@ -1,0 +1,53 @@
+dream_to_semantic:
+  description: >
+    Given a dream description {dream_text}, extract its semantic meaning and return a JSON
+    object with the following fields:
+    - event_type: short phrase describing the trauma type
+    - context: the setting/environment of the dream
+    - symptoms: list of psychological/physical reactions described
+    - specific_events: list of concrete dream events tied to trauma
+
+    You must follow the mapping rules in guidelines {guidelines} when assigning ICD-11 codes.
+
+    Follow this schema strictly:
+    {
+      "semantic_representation": {
+        "event_type": "<string>",
+        "context": "<string>",
+        "symptoms": ["<string>", "<string>", ...],
+        "specific_events": ["<string>", "<string>", ...],
+      }
+    }
+
+    If a field is unclear, return an empty array [] or empty string "".
+
+    Examples:
+
+    Input:
+    "I was trapped inside a sinking car, the water rising, I couldn’t breathe."
+
+    Output:
+    {
+      "semantic_representation": {
+        "event_type": "life-threatening accident",
+        "context": "sinking car",
+        "symptoms": ["panic", "claustrophobia", "suffocation"],
+        "specific_events": ["water rising inside car", "trapped and unable to escape"]
+      }
+    }
+
+    Input:
+    "I was running through a ruined city at night. Explosions echoed, and soldiers moved past me with rifles."
+
+    Output:
+    {
+      "semantic_representation": {
+        "event_type": "exposure to armed conflict",
+        "context": "ruined city, explosions at night",
+        "symptoms": ["fear", "hyperarousal", "helplessness"],
+        "specific_events": ["running through destroyed environment", "seeing soldiers with rifles"]
+      }
+    }
+  expected_output: >
+    A valid JSON object strictly following the schema with no additional text.
+  agent: semantic_agent

@@ -1,0 +1,42 @@
+reporting_task:
+  description: >
+    Given two JSON files as input:
+      1. {semantic}: provides the semantic representation of a dream description,
+         including events, contexts, emotions, and symptoms.
+      2. {trigger}: provides hidden PTSD triggers inferred from the dream description.
+
+    Your task is to write a comprehensive, well-structured markdown report that integrates
+    both sources of data into a single coherent document. The report should not merely
+    list the data, but analyze, synthesize, and expand on the findings so that they are
+    clinically interpretable.
+
+    Specifically:
+      - Start with a **Report Overview** summarizing the purpose and scope of the analysis, very briefly. Dont beat around the bush. 
+      - Provide a **Dream Semantics Section**, detailing the dream's narrative structure,
+        key events, contextual elements, and symptom associations.
+      - Provide a **PTSD Trigger Analysis Section**, outlining the hidden triggers identified,
+        their potential clinical relevance, and how they might connect to the dream content, make it as comprehensive as possible. 
+      - Provide whether there are relevent PTSD triggers available in dream description. If you think there are no PTSD triggers, say so. Dont beat around the bush. 
+      - Write a **Cross-Analysis Section**, where you interpret how the dream semantics
+        and PTSD triggers interrelate. Discuss overlapping patterns, possible meanings,
+        and clinical implications. 
+      - End with a **Concluding Remarks Section**, summarizing the insights in couple of lines only. 
+
+    The writing style should be:
+      - Structured and professional, as if prepared for clinicians or researchers but use simple english so that even a local patient can understand. 
+      - Comprehensive, ensuring that every semantic element and trigger from the JSON input
+        is addressed.
+      - Interpretive, not just descriptive: explain why the data matters and what it suggests.
+
+  expected_output: >
+    A fully developed markdown report with the following sections:
+      - Title and Report Overview
+      - Dream Semantics Analysis
+      - PTSD Trigger Analysis
+      - Cross-Analysis and Interpretive Insights
+      - Concluding Remarks
+
+    The report must integrate and expand on the data rather than simply restating it.
+    Each section should be clear, detailed, and clinically meaningful.
+    The final output should be formatted in markdown, without using code block fences (no ```).
+  agent: reporting_analyst

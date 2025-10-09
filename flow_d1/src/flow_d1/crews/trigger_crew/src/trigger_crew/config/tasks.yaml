@@ -1,0 +1,93 @@
+semantic_to_triggers:
+  description: >
+    Given: (1) dream description {dream_text}, (2) semantic JSON {semantic_json},
+    and (3) DSM-5 + ICD-11 guidelines {guidelines}, identify hidden PTSD trigger
+    cues. Only include categories that are actually present in the dream. Do not
+    force categories that are irrelevant. Possible Categories could be: 
+    People, Thoughts, Emotions, Things, Scents, Places, Media,
+    Feelings, Sounds, Tastes, Situations, Anniversaries, Words. Do not
+    force categories that are irrelevant. 
+
+    Output schema:
+    {
+      "triggers": {
+        "<CategoryName>": [
+          {
+            "trigger": "<string>",               
+            "evidence": ["<string>", ...],       
+            "dsm5_mapping": ["<string>", ...],   
+            "rationale": "<string>",             
+            "recommended_action": "<string>"     
+          }
+        ]
+      },
+      "summary": "<string>",
+      "assessment": {
+        "likely_ptsd_trigger": <boolean>,
+        "rationale": "<string>"
+      }
+    }
+
+    Instructions:
+    - Only use the fixed categories: People, ThoughtsEmotions, Things, Scents,
+      Places, Media, Feelings, Sounds, Tastes, Situations, Anniversaries, Words.
+    - Every trigger must have DSM-5 mapping (Criterion A–H).
+    - Cite direct dream_text or semantic_json phrases under "evidence".
+    - If no triggers are found, return an empty "triggers" object.
+    - Do not include IDs, confidence values, or "source".
+    - Do not output anything outside JSON.
+
+  expected_output: >
+    A valid JSON object strictly following the schema above. All triggers must
+    include at least one DSM-5 mapping.
+  examples:
+    - input:
+        dream_text: "I was back in the burning building, hearing screams and feeling trapped."
+        semantic_json: {
+          "semantic_representation": {
+            "event_type":"fire accident",
+            "context":"burning building",
+            "symptoms":["fear","helplessness"],
+            "specific_events":["hearing screams","feeling trapped in smoke"]
+          }
+        }
+        guidelines: "DSM-5 + ICD-11 PTSD criteria"
+      output:
+        {
+          "triggers": {
+            "Places": [
+              {
+                "trigger": "Burning building",
+                "evidence": ["'I was back in the burning building.'"],
+                "dsm5_mapping": ["Criterion B: intrusion symptoms", "Criterion C: avoidance"],
+                "rationale": "Re-experiencing the traumatic place reflects intrusive memories and avoidance of trauma reminders.",
+                "recommended_action": "Assess avoidance of fire-related reminders or distress linked to enclosed unsafe environments."
+              }
+            ],
+            "Sounds": [
+              {
+                "trigger": "Hearing screams",
+                "evidence": ["'hearing screams'"],
+                "dsm5_mapping": ["Criterion B: intrusion", "Criterion E: hyperarousal"],
+                "rationale": "Distressing auditory intrusions are classic PTSD features, often linked to flashbacks.",
+                "recommended_action": "Explore sensitivity to loud or distressing sounds in daily life."
+              }
+            ],
+            "Feelings": [
+              {
+                "trigger": "Feeling trapped and helpless",
+                "evidence": ["'feeling trapped in smoke'"],
+                "dsm5_mapping": ["Criterion B: distressing dreams", "Criterion D: negative mood/cognitions"],
+                "rationale": "Feelings of entrapment and helplessness replay trauma-related affect.",
+                "recommended_action": "Evaluate ongoing distress tied to helplessness or suffocation."
+              }
+            ]
+          },
+          "summary": "Dream includes PTSD triggers across Places, Sounds, and Feelings. They align with DSM-5 Criteria B, C, D, and E.",
+          "assessment": {
+            "likely_ptsd_trigger": true,
+            "rationale": "Dream content (burning building, screams, helplessness) directly maps to intrusion, avoidance, negative mood, and hyperarousal criteria."
+          }
+        }
+
+  agent: trigger_agent
