@@ -158,20 +158,6 @@ All intermediate outputs are **persisted**, enabling:
 5. Structured, agent-readable psychiatric guidelines
 6. Fully reproducible, stage-wise persisted analysis
 
----
-
-## 🖥️ Screenshots
-
-> *(Add screenshots of Streamlit UI, JSON outputs, and markdown reports here)*
-
-```markdown
-![Semantic Output](screenshots/semantic_output.png)
-![Trigger Detection](screenshots/trigger_output.png)
-![Final Report](screenshots/report_output.png)
-```
-
----
-
 ## ⚠️ Disclaimer
 
 > **KenSho is a research and decision-support system.**
